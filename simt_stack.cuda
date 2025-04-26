@@ -1,0 +1,30 @@
+__global__ void simt_stack_cuda() {
+  int tid = threadIdx.x + blockIdx.x * blockDim.x;
+  
+  x1 = 1;
+  x2 = 2;
+  x3 = 3;
+  x4 = 4;
+  x5 = 5;
+  x6 = 6;
+
+  if (tid > x1){
+    if (tid < x2){
+
+        if (tid < x3){
+
+        }
+
+    } else{
+
+    }
+
+  } else {
+        if (tid > x4){
+
+        } else{
+
+        }
+
+  }
+}
